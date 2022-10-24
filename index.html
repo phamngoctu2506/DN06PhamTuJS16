@@ -7,24 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <title>Bài tập JS 3</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Bài tập JS buổi 16</title>
 </head>
+
 <body>
-<div>
-    
-</div>
-
-
-
-<!-- BS CSS -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
-<script src="./js/main.js"></script>
+    <div>
+        <div class="container m-auto bg-light">
+            <div>
+                <h2>Bài tập 1: Tìm số nguyên dương nhỏ nhất</h2>
+                <button onclick="timSoNguyenDuong()" class="btn btn-primary m-3">Xem Kết Quả</button>
+                <div id="ketQua" class="mt-2 alert alert-success">
+                    Kết quả :
+                    <span id="ketQua1"></span>
+                </div>
+            </div>
+            <div>
+                <h2 class="m-5">Bài tập 2: Tính tổng số chẳn</h2>
+                <form>
+                    <input class="form-control w-25" type="number" id="num1">
+                    <input class="form-control w-25 mt-2" type="number2" id="num2">
+                    <button type="button" onclick="tinhTongSo()" class="btn btn-primary m-3">Tính Tổng</button>
+                    <div id="ketQua2" class="mt-2 alert alert-success">
+                        Kết quả :
+                        <span id="ketQua2"></span>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <h2 class="m-5">Bài tập 3: Tính Giai Thừa</h2>
+                <form>
+                    <input class="form-control w-25" type="number3" id="num3">
+                    <button type="button" onclick="tinhGiaiThua()" class="btn btn-primary m-3">Tính Tổng</button>
+                    <div id="ketQua3" class="mt-2 alert alert-success">
+                        Kết quả :
+                        <span id="ketQua3">
+                            
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <h2>Bài tập 4: Tạo Thẻ Div</h2>
+                <button type="button" onclick="taoDiv()" class="btn btn-primary m-3">Tạo Div</button>
+                <div id="ketQua" class="mt-2 alert alert-success">
+                    Kết quả :
+                    <span id="ketQua4"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
