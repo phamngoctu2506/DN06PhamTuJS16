@@ -1,7 +1,7 @@
 //! bài tập 1
 /**
  * b1: tạo hàm
- * b2: gán giá trị
+ * b2: khai báo biến
  * b3: phân loại điều kiện vòng lặp
  * b4: hiển thị kết quả
  */
@@ -45,7 +45,6 @@ function tinhTongSo() {
  * b4: hiển thị kết quả
  */
 
-
 function tinhGiaiThua() {
     var num3 = Number(document.getElementById('num3').value);
     var giaiThua = 1;
@@ -56,42 +55,26 @@ function tinhGiaiThua() {
     document.getElementById('ketQua3').innerHTML = giaiThua;
 }
 
-
-
 //! bài tập 4
 /**
  * b1: tạo hàm
- * b2: Lấy giá trị từ value
- * b3: phân loại điều kiện vòng lặp
- * b4: hiển thị kết quả
+ * b2: gắn sự kiện click
+ * b3: tạo biến cho divChan divLe
+ * b4: phân loại điều kiện vòng lặp và điều kiện if else
+ * b5: hiển thị kết quả
  */
 
 
-// function taoDiv() {
-
-//     for (var i = 0; i <= 10; i++) {
-//         if ((i + 1) % 2 == 0) {
-//             var div = '<div class="mt-2 alert bg-primary">Div chẵn</div>'
-//         } else {
-//             var div = '<div class="mt-2 alert bg-danger">Div lẻ</div>'
-//         }
-//     }
-//     document.getElementById('ketQua1').innerHTML = i;
-// }
-
 function taoDiv() {
-    var divChan = "";
-    var divLe = "";
+    var divChan = '<div class="mt-2 alert bg-primary">Div chẵn</div>';
+    var divLe = '<div class="mt-2 alert bg-danger">Div lẻ</div>';
     var thediv = "";
     for (var i = 1; i <= 10; i++) {
         if (i % 2 != 0) {
-
-            thediv += '<div class="mt-2 alert bg-danger">Div lẻ</div>'
-        } else {
-          
-            thediv += '<div class="mt-2 alert bg-primary">Div chẵn</div>'
+            thediv += divLe;
+        } else {   
+            thediv += divChan;
         }
     }
-    //thông kết quả cuối cùng
     document.getElementById("ketQua4").innerHTML = thediv;
 }
