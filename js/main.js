@@ -67,14 +67,31 @@ function tinhGiaiThua() {
  */
 
 
+// function taoDiv() {
+
+//     for (var i = 0; i <= 10; i++) {
+//         if ((i + 1) % 2 == 0) {
+//             var div = '<div class="mt-2 alert bg-primary">Div chẵn</div>'
+//         } else {
+//             var div = '<div class="mt-2 alert bg-danger">Div lẻ</div>'
+//         }
+//     }
+//     document.getElementById('ketQua1').innerHTML = i;
+// }
+
 function taoDiv() {
-    for (var i = 0; i < div.length; i++) {
-        if ((i + 1) % 2 == 0) {
-            div[i].style.background = "red";
+    var divChan = "";
+    var divLe = "";
+    var thediv = "";
+    for (var i = 1; i <= 10; i++) {
+        if (i % 2 != 0) {
+
+            thediv += '<div class="mt-2 alert bg-danger">Div lẻ</div>'
         } else {
-            div[i].style.background = "blue";
+          
+            thediv += '<div class="mt-2 alert bg-primary">Div chẵn</div>'
         }
     }
-    document.getElementById('ketQua1').innerHTML = i;
+    //thông kết quả cuối cùng
+    document.getElementById("ketQua4").innerHTML = thediv;
 }
-
